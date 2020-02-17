@@ -3,10 +3,12 @@ module.exports = function createDreamTeam(arr) {
     if (Array.isArray(arr)) {
     	for (let value of arr) {
     		if (typeof value == 'string') {
-    			team.push((value.match(/[\p{Lu}]/gu).join('')));
+
+    			team.push((value.toUpperCase().match(/\b\w/i)));
+    			console.log(team);
     		}
       }
-      return team.sort().join('');
+     return team.sort().join('');
     }
     else return false;
     
