@@ -4,7 +4,6 @@ module.exports = function getSeason(date) {
   
 
   let month = date.getMonth();
-  console.log(month);
   if (month == 11 || month == 0 || month == 1) return "winter";
   else if (month > 1 && month < 5) return "spring";
   else if (month >= 5 && month < 8) return "summer";
