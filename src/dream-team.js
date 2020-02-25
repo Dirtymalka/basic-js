@@ -5,7 +5,6 @@ module.exports = function createDreamTeam(arr) {
     		if (typeof value == 'string') {
 
     			team.push((value.toUpperCase().match(/\b\w/i)));
-    			console.log(team);
     		}
       }
      return team.sort().join('');
